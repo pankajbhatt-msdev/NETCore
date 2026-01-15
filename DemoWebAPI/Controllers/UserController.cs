@@ -42,7 +42,7 @@ namespace DemoWebAPI.Controllers
                 return Ok(matchedUser);
             }
 
-            return NotFound("User not found. Please check your credentials.");
+            return Unauthorized("User not found. Please check your credentials.");
         }
 
         // PUT api/<UserController>/5
